@@ -63,16 +63,6 @@ namespace niwarnneverdies.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bg_HSHO_Thumbnail_Poster_v000_web_copy_2 {
-            get {
-                object obj = ResourceManager.GetObject("bg_HSHO_Thumbnail_Poster_v000_web_copy_2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap close_new {
             get {
                 object obj = ResourceManager.GetObject("close_new", resourceCulture);

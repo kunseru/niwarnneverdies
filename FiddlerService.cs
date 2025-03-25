@@ -56,6 +56,18 @@ namespace niwarnneverdies
 					.MonitorAllConnections()
 					.Build();
 
+			FiddlerApplication.BeforeRequest += (session) =>
+			{
+				if (session.oRequest["User-Agent"].Contains("HSHO") || session.hostname.Contains("homesweethome"))
+				{
+					session.bypassGateway = false;
+				}
+				else
+				{
+					session.bypassGateway = true;
+				}
+			};
+
 			FiddlerApplication.OnValidateServerCertificate += (sender, ea) =>
 			{
 				if (ea.Session.hostname.Contains("homesweethome"))
